@@ -12,10 +12,10 @@ const initdb = async () =>
     },
   });
 
-// Initialize the database
+// Initialize database
 const dbPromise = initdb();
 
-// Store content in the database
+// Store content in database
 export const putDb = async (content) => {
   const db = await dbPromise;
   const tx = db.transaction('jate', 'readwrite');
@@ -24,7 +24,7 @@ export const putDb = async (content) => {
   await tx.done;
 };
 
-// Retrieve all content from the database
+// Retrieve all content from database
 export const getDb = async () => {
   const db = await dbPromise;
   const tx = db.transaction('jate', 'readonly');
@@ -34,8 +34,8 @@ export const getDb = async () => {
   return content;
 };
 
-// Export a reference to the initialized database promise
+// Export reference to initialized database promise
 export { dbPromise as db };
 
-// Export the initdb function in case you need to access it externally
+// Export function to access it externally
 export { initdb };

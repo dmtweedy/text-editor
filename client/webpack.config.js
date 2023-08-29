@@ -17,7 +17,7 @@ module.exports = () => {
     plugins: [
       // HTML file from a template
       new HtmlWebpackPlugin({
-        template: './src/index.html',
+        template: './index.html',
         chunks: ['main'],
       }),
 
@@ -30,7 +30,7 @@ module.exports = () => {
         theme_color: '#31a9e1',
         icons: [
           {
-            src: path.resolve('src/images/icon.png'),
+            src: path.resolve('src/images/logo.png'),
             sizes: [96, 128, 192, 256, 384, 512], // multiple sizes for different devices
             destination: path.join('assets', 'icons'),
           },

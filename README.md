@@ -5,4 +5,4 @@ This assignment is a PWA assignment utilizing NodeJS, ExpressJS, Webpack/Workbox
 
 ![Application screenshot.](https://github.com/dmtweedy/text-editor/assets/135908704/3be47438-90b4-4e3a-86c5-16f055021214)
 
-[Link to application.]()
+[Link to application.](https://dmtweedy-text-editor-9bac1427742a.herokuapp.com/)

@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>J.A.T.E</title>
-      <script type="text/javascript" src="./dist/service-worker.js"></script>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    
       <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/codemirror.min.css">
       </link>
@@ -17,18 +17,17 @@
       <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/theme/monokai.min.css">
       </link>
-      <link rel="stylesheet" href="./src/css/style.css">
   </head>
   <body>
     <nav id="navbar">
       <div class="nav-btn">
-        <a class="btn btn-sm btn-dark" id="buttonInstall" role="button">Install Me!</a>
+        <a class="btn btn-sm btn-dark" id="buttonInstall" role="button">Install!</a>
       </div>
       <h1> Just Another Text Editor</h1>
       
-      <div class="navbar-brand">
-        <img src="./src/images/logo.png" alt="App Icon"/>
-      </div>
+      <div class="navbar-brand" 
+            ><img src="./assets/icons/icon_96x96.png"
+          /></div>
     </nav>
 
     <main id="main">
@@ -36,7 +35,6 @@
         <div class="loading-spinner"></div>
       </div>
     </main>
-      <script type="text/javascript" src="./dist/main.bundle.js"></script>
-      <script type="text/javascript" src="./dist/install.bundle.js"></script>
+    
   </body>
 </html>

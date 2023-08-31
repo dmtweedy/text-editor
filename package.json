@@ -3,8 +3,7 @@
   "scripts": {
     "dev": "webpack-dev-server",
     "build": "cd client && npm install && npm run build",
-    "start": "npm run server",
-    "server": "node server.js"
+    "server": "cd server && npm run server"
   },
   "author": "2U",
   "license": "UNLICENSED",
